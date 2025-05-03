@@ -15,7 +15,9 @@ def is_empty(list_to_check):
 
 
 def check_lists(list_to_compare1, list_to_compare2):
-    return list_to_compare1[2] == list_to_compare2[2]
+    el1 = list_to_compare1[2:][:1]
+    el2 = list_to_compare2[2:][:1]
+    return el1 == el2
 
 
 def list_of_lists(list_of_lists_to_modify):
@@ -24,3 +26,5 @@ def list_of_lists(list_of_lists_to_modify):
     list3 = list_of_lists_to_modify[2][-2:]
     list = [list1 , list2 , list3]
     return list
+
+check_lists(['Black', 'Pink', 'Yellow', 'Red', 'Green', 'White'], ['Red', 'Green', 'Yellow', 'White', 'Black', 'Pink'])
