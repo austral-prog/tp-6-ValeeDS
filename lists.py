@@ -26,5 +26,3 @@ def list_of_lists(list_of_lists_to_modify):
     list3 = list_of_lists_to_modify[2][-2:]
     list = [list1 , list2 , list3]
     return list
-
-check_lists(['Black', 'Pink', 'Yellow', 'Red', 'Green', 'White'], ['Red', 'Green', 'Yellow', 'White', 'Black', 'Pink'])
