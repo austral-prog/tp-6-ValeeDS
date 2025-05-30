@@ -11,7 +11,8 @@ def add_elements(list_to_add_elements):
 
 
 def is_empty(list_to_check):
-    return list_to_check == []
+    # return list_to_check == [] ---> Esto ocupa espacio en la memoria, no es eficiente. Crea un nuevo elemento
+    return len(list_to_check) == 0 # Esto es lo correcto
 
 
 def check_lists(list_to_compare1, list_to_compare2):
